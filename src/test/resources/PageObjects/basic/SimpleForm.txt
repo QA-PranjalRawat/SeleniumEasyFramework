@@ -1,0 +1,6 @@
+Page : Simple Form Demo
+
+simpleFormClick: linktext: Simple Form Demo
+enterMessage: css: input[id=user-message]
+showMessage: css: form#get-input>button
+yourMessage: css: div#user-message>span#display
