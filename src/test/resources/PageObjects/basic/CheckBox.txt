@@ -1,0 +1,11 @@
+Page: Check Box Demo
+
+checkBoxClick: linktext: Check Box Demo
+
+
+singleCheckBox: css: input#isAgeSelected
+singleSuccessMsg: css: div#txtAge
+
+
+checkAllBtn: css: input#check1
+option4: css: div.panel-body .checkbox:nth-of-type(4) input

@@ -1,6 +1,14 @@
 Page : Simple Form Demo
 
 simpleFormClick: linktext: Simple Form Demo
+
+
 enterMessage: css: input[id=user-message]
 showMessage: css: form#get-input>button
 yourMessage: css: div#user-message>span#display
+
+
+enterA: css: div.form-group #sum1
+enterB: css: div.form-group #sum2
+getTotal: css: form#gettotal button
+displayValue: css: div span#displayvalue

@@ -30,6 +30,7 @@ public class TestSessionInitiator extends BaseDriver {
      */
     public BasicActions basicActions;
     public SimpleFormActions simpleFormActions;
+    public CheckBoxActions checkBoxActions;
 
 
     /**
@@ -39,6 +40,7 @@ public class TestSessionInitiator extends BaseDriver {
     private void _initPage() {
         basicActions = new BasicActions(driver);
         simpleFormActions = new SimpleFormActions(driver);
+        checkBoxActions = new CheckBoxActions(driver);
     }
 
 
@@ -60,7 +62,7 @@ public class TestSessionInitiator extends BaseDriver {
      * @priority = -3
      */
 
-    @BeforeTest
+    @BeforeSuite
     public static void startReport(){
 
         extent = new ExtentReports();
@@ -82,11 +84,7 @@ public class TestSessionInitiator extends BaseDriver {
     }
 
 
-//
-//    @BeforeMethod
-//    public static void startTest(){
-//        extent.createTest("first test");
-//    }
+
 
     /**
      * Method to be run after the execution of any test method in that class file
@@ -104,7 +102,7 @@ public class TestSessionInitiator extends BaseDriver {
 
     }
 
-    @AfterTest
+    @AfterSuite
     public static void endReport(){
         extent.flush();
     }
