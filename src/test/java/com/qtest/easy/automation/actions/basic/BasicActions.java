@@ -26,7 +26,10 @@ public class BasicActions extends GetPage {
     public void clickOnBasic(){
         logInfo("Performing Click on Basic button action");
         popUpHandler();
+
+        wait.waitForElementToBeClickable(element("basic_btn"));
         element("basic_btn").click();
+
         logInfo("Basic button clicked successfully");
         wait.hardWait(1);
     }
@@ -34,6 +37,7 @@ public class BasicActions extends GetPage {
         logInfo("Verifying Basic Section tab change");
         String activeTab;
         activeTab = element("active_text").getText();
+
         assertThat("Basic",equalToIgnoringCase(activeTab));
         logInfo("Successfully Verified Basic Active Tab");
     }
