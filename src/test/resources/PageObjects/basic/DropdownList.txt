@@ -1,0 +1,12 @@
+Page: Select Dropdown List
+
+dropdownListClick: linktext: Select Dropdown List
+
+singleSelectList: css: select#select-demo
+singleSelectedValue: css: p.selected-value
+
+
+multiSelectList: css: select#multi-select
+multiFirstSelected: css: button#printMe
+multiGetAllSelected: css: button#printAll
+multiSelectedValues: css: p.getall-selected

@@ -21,6 +21,11 @@
             <class name="com.qtest.easy.automation.tests.basic.RadioButton"/>
         </classes>
     </test>
+    <test name="DropdownList">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.basic.DropdownList"/>
+        </classes>
+    </test>
 
 
 
