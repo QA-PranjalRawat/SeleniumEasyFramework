@@ -1,0 +1,18 @@
+Page: Radio Button Demo
+
+radioButtonClick: linktext: Radio Buttons Demo
+
+
+singleMaleRadio: css: input[value='Male'][name='optradio']
+singleFemaleRadio: css: input[value='Female'][name='optradio']
+singleGetCheckedValueButton: css: button#buttoncheck
+singleCheckedValue: css: p.radiobutton
+
+
+groupMaleRadio: css: input[value='Male'][name='gender']
+groupFemaleRadio: css: input[value='Female'][name='gender']
+groupAge0to5: css: input[value='0 - 5'][name='ageGroup']
+groupAge5to15: css: input[value='5 - 15'][name='ageGroup']
+groupAge15to50: css: input[value='15 - 50'][name='ageGroup']
+groupGetValuesButton: css: button[onclick='getValues();']
+groupValue: css: p.groupradiobutton

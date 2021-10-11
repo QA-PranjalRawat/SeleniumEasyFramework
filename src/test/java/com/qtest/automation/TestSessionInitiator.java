@@ -31,6 +31,7 @@ public class TestSessionInitiator extends BaseDriver {
     public BasicActions basicActions;
     public SimpleFormActions simpleFormActions;
     public CheckBoxActions checkBoxActions;
+    public RadioButttonActions radioButttonActions;
 
 
     /**
@@ -41,6 +42,7 @@ public class TestSessionInitiator extends BaseDriver {
         basicActions = new BasicActions(driver);
         simpleFormActions = new SimpleFormActions(driver);
         checkBoxActions = new CheckBoxActions(driver);
+        radioButttonActions = new RadioButttonActions(driver);
     }
 
 
