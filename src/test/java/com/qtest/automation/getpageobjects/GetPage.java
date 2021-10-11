@@ -1,9 +1,6 @@
 package com.qtest.automation.getpageobjects;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 
 import static com.qtest.automation.getpageobjects.ObjectFileReader.getELementFromFile;
 import static org.testng.Assert.fail;
@@ -29,6 +26,11 @@ public class GetPage extends BaseUi{
     }
     protected void alertHandlerDismiss(){
         driver.switchTo().alert().dismiss();
+    }
+    protected void promptAlertHandler(String promptMessage){
+        Alert promptAlert = driver.switchTo().alert();
+        promptAlert.sendKeys(promptMessage);
+        promptAlert.accept();
     }
 
 

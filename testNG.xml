@@ -26,6 +26,11 @@
             <class name="com.qtest.easy.automation.tests.basic.DropdownList"/>
         </classes>
     </test>
+    <test name="JavaScript Alerts">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.basic.JavaScriptAlerts"/>
+        </classes>
+    </test>
 
 
 

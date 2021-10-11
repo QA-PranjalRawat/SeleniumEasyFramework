@@ -1,0 +1,13 @@
+Page: JavaScript Alerts
+
+javaScriptAlertClick: linktext: Javascript Alerts
+
+
+simpleClickMe: css: button[onclick='myAlertFunction()']
+
+confirmClickMe: css: button[onclick='myConfirmFunction()']
+confirmMessage: css: p#confirm-demo
+
+
+promptClickMe: css: button[onclick='myPromptFunction()']
+promptMessage: css: p#prompt-demo
