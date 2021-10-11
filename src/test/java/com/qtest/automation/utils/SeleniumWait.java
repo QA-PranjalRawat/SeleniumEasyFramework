@@ -36,6 +36,9 @@ public class SeleniumWait {
                 .visibilityOfElementLocated(locator));
         return element;
     }
+    public void waitForAlertToPresent(){
+        wait.until(ExpectedConditions.alertIsPresent());
+    }
     
     public WebElement getWhenClickable(By locator) {
         WebElement element;

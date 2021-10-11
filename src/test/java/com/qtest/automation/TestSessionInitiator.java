@@ -33,6 +33,7 @@ public class TestSessionInitiator extends BaseDriver {
     public CheckBoxActions checkBoxActions;
     public RadioButttonActions radioButttonActions;
     public DropdownListActions dropdownListActions;
+    public JavaScriptAlertsActions javaScriptAlertsActions;
 
 
     /**
@@ -45,6 +46,7 @@ public class TestSessionInitiator extends BaseDriver {
         checkBoxActions = new CheckBoxActions(driver);
         radioButttonActions = new RadioButttonActions(driver);
         dropdownListActions = new DropdownListActions(driver);
+        javaScriptAlertsActions = new JavaScriptAlertsActions(driver);
     }
 
 
