@@ -1,0 +1,17 @@
+Page: BootStrap Alerts
+
+bootstrapAlertClick: linktext: Bootstrap Alerts
+
+
+autocloseableSuccessBtn: css: button#autoclosable-btn-success
+normalSuccessBtn: css: button#normal-btn-success
+autocloseableWarningBtn: css: button#autoclosable-btn-warning
+normalWarningBtn: css: button#normal-btn-warning
+autocloseableDangerBtn: css: button#autoclosable-btn-danger
+normalDangerBtn: css: button#normal-btn-danger
+autocloseableInfoBtn: css: button#autoclosable-btn-info
+normalInfoBtn: css: button#normal-btn-info
+
+alertMessage: css: div.alert[style='display: block;']
+alertCloseBtn: css: div.alert[style='display: block;']>button
+
