@@ -41,7 +41,11 @@
             <class name="com.qtest.easy.automation.tests.basic.BootstrapAlerts"/>
         </classes>
     </test>
-
+    <test name="Bootstrap Modals">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.basic.BootstrapModals"/>
+        </classes>
+    </test>
 
 
 </suite>

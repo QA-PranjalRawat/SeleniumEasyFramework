@@ -36,6 +36,7 @@ public class TestSessionInitiator extends BaseDriver {
     public JavaScriptAlertsActions javaScriptAlertsActions;
     public WindowPopupModelActions windowPopupModelActions;
     public BootstrapAlertsActions bootstrapAlertsActions;
+    public BootstrapModalsActions bootstrapModalsActions;
 
 
     /**
@@ -51,6 +52,7 @@ public class TestSessionInitiator extends BaseDriver {
         javaScriptAlertsActions = new JavaScriptAlertsActions(driver);
         windowPopupModelActions = new WindowPopupModelActions(driver);
         bootstrapAlertsActions = new BootstrapAlertsActions(driver);
+        bootstrapModalsActions = new BootstrapModalsActions(driver);
 
     }
 
