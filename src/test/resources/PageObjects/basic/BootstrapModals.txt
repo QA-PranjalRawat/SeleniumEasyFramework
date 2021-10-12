@@ -1,0 +1,16 @@
+Page: Bootstrap Modals
+
+bootstrapModalClick: linktext: Bootstrap Modals
+
+singleLaunchModalBtn: css: a[href='#myModal0']
+singleModalTitle: css: #myModal0 .modal-title
+singleModalCloseBtn: css: #myModal0 div>a[data-dismiss]
+
+multipleLaunchModalBtn: css: a[href='#myModal']
+
+firstMultiModalTitle: css: #myModal .modal-title
+firstMultiModalCloseBtn: css: #myModal div>a[data-dismiss]
+
+secondMultiModalLaunchBtn: css: a[href='#myModal2']
+secondMultiModalTitle: css: #myModal2 .modal-title
+secondMultiModalCloseBtn: css: #myModal2 div>a[data-dismiss]
