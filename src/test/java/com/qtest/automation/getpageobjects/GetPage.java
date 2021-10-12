@@ -2,6 +2,11 @@ package com.qtest.automation.getpageobjects;
 
 import org.openqa.selenium.*;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
 import static com.qtest.automation.getpageobjects.ObjectFileReader.getELementFromFile;
 import static org.testng.Assert.fail;
 
@@ -31,6 +36,28 @@ public class GetPage extends BaseUi{
         Alert promptAlert = driver.switchTo().alert();
         promptAlert.sendKeys(promptMessage);
         promptAlert.accept();
+    }
+
+    protected List<String> windowsHandler(){
+        String mainWindow = driver.getWindowHandle();
+        Set<String> childWindowList = driver.getWindowHandles();
+        List<String> Titles = new ArrayList<>();
+        Iterator<String> I1 = childWindowList.iterator();
+
+        while (I1.hasNext()) {
+            String childWindow = I1.next();
+            if (!mainWindow.equals(childWindow)) {
+                driver.switchTo().window(childWindow);
+                wait.waitForPageToLoadCompletely();
+                String title = driver.switchTo().window(childWindow).getTitle();
+                Titles.add(title);
+                driver.close();
+            }
+
+        }
+        wait.hardWait(1);
+        driver.switchTo().window(mainWindow);
+        return Titles;
     }
 
 

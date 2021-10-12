@@ -34,6 +34,7 @@ public class TestSessionInitiator extends BaseDriver {
     public RadioButttonActions radioButttonActions;
     public DropdownListActions dropdownListActions;
     public JavaScriptAlertsActions javaScriptAlertsActions;
+    public WindowPopupModelActions windowPopupModelActions;
 
 
     /**
@@ -47,6 +48,7 @@ public class TestSessionInitiator extends BaseDriver {
         radioButttonActions = new RadioButttonActions(driver);
         dropdownListActions = new DropdownListActions(driver);
         javaScriptAlertsActions = new JavaScriptAlertsActions(driver);
+        windowPopupModelActions = new WindowPopupModelActions(driver);
     }
 
 

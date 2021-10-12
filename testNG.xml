@@ -31,6 +31,11 @@
             <class name="com.qtest.easy.automation.tests.basic.JavaScriptAlerts"/>
         </classes>
     </test>
+    <test name="Window Popup Model">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.basic.WindowPopupModel"/>
+        </classes>
+    </test>
 
 
 

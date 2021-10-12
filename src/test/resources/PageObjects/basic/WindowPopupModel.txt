@@ -1,0 +1,9 @@
+Page: Window Popup Modal
+
+windowPopupClick: linktext: Window Popup Modal
+
+followOnTwitter: linktext: Follow On Twitter
+likeOnFacebook: linktext: Like us On Facebook
+
+twoWindows: css: div.two-windows>a
+threeWindows: css: div.three-dwindows>a
