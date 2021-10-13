@@ -1,0 +1,17 @@
+Page: Input Form With Validations
+
+inputFormBtn: linktext: Input Form with Validations
+
+firstName: css: input[name='first_name']
+lastName: css: input[name='last_name']
+email: css: input[name='email']
+phone: css: input[name='phone']
+address: css: input[name='address']
+city: css: input[name='city']
+state: css: select[name='state']
+zip: css: input[name='zip']
+website: css: input[name='website']
+hostingYes: css: div.radio input[value='yes']
+hostingNo: css: div.radio input[value='no']
+description: css: textarea[name='comment']
+sendBtn: css: .form-group button[type='submit']

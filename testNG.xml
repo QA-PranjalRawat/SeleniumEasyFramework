@@ -54,4 +54,9 @@
             <class name="com.qtest.easy.automation.tests.intermediate.Intermediate"/>
         </classes>
     </test>
+    <test name="Input Form With Validation">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.intermediate.InputFormWithValidation"/>
+        </classes>
+    </test>
 </suite>
