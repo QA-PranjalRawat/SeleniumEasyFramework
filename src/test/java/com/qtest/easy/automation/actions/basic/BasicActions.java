@@ -23,6 +23,7 @@ public class BasicActions extends GetPage {
         logInfo("Basic button clicked successfully");
         wait.hardWait(1);
     }
+    
     public void verifyActiveTab(){
         logInfo("Verifying Basic Section tab change");
         String activeTab;
