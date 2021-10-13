@@ -1,0 +1,9 @@
+Page: Ajax FOrm
+
+ajaxFormBtn: linktext: Ajax Form Submit
+
+name: css: input#title
+comment: css: textarea#description
+submitBtn: css: #submit-control #btn-submit
+
+submitMessage: css: div #submit-control
