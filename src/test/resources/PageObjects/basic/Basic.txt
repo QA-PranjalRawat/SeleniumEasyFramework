@@ -1,4 +1,4 @@
-Page : BasicActions
+Page : Basic
 
 basic_btn: css: a#basic_example
 popUp_btn: css: a.at-cm-no-button
