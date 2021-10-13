@@ -59,4 +59,9 @@
             <class name="com.qtest.easy.automation.tests.intermediate.InputFormWithValidation"/>
         </classes>
     </test>
+    <test name="Ajax Form">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.intermediate.AjaxForm"/>
+        </classes>
+    </test>
 </suite>

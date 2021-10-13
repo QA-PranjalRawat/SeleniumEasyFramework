@@ -139,7 +139,7 @@ public class SeleniumWait {
         } catch (StaleElementReferenceException e) {
         	System.out.println("exception thrown");
         }
-        System.out.println("exitig loop");
+        System.out.println("exiting loop");
         resetImplicitTimeout(timeout);   
         System.out.println("exiting function");
     }
@@ -151,7 +151,7 @@ public class SeleniumWait {
             while (!((element.getText()).equals(ExpectedText)) && i <= timeout) {
                 hardWait(1);                
                 i++;
-               System.out.println(i + " Seconds");
+//               System.out.println(i + " Seconds");
             }
          
         } catch (Exception e) {

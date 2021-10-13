@@ -42,6 +42,7 @@ public class TestSessionInitiator extends BaseDriver {
 
     public IntermediateActions intermediateActions;
     public InputFormWithValidationActions inputFormWithValidationActions;
+    public AjaxFormActions ajaxFormActions;
 
     /**
      * Creating objects of Page Objects
@@ -61,6 +62,7 @@ public class TestSessionInitiator extends BaseDriver {
 
         intermediateActions = new IntermediateActions(driver);
         inputFormWithValidationActions = new InputFormWithValidationActions(driver);
+        ajaxFormActions = new AjaxFormActions(driver);
 
     }
 
