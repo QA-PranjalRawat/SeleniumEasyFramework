@@ -7,7 +7,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.qtest.automation.utils.BaseDriver;
 
 import com.qtest.easy.automation.actions.basic.*;
-import com.qtest.easy.automation.actions.intermediate.IntermediateActions;
+import com.qtest.easy.automation.actions.intermediate.*;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
@@ -41,7 +41,7 @@ public class TestSessionInitiator extends BaseDriver {
 
 
     public IntermediateActions intermediateActions;
-
+    public InputFormWithValidationActions inputFormWithValidationActions;
 
     /**
      * Creating objects of Page Objects
@@ -60,6 +60,7 @@ public class TestSessionInitiator extends BaseDriver {
 
 
         intermediateActions = new IntermediateActions(driver);
+        inputFormWithValidationActions = new InputFormWithValidationActions(driver);
 
     }
 
