@@ -60,6 +60,17 @@ public class GetPage extends BaseUi{
         return Titles;
     }
 
+    public void popUpHandler(String popUpBtn){
+        logInfo("Activating pop up handler");
+        try {
+            element(popUpBtn).click();
+            logInfo("Pop Up Successfully Handled");
+        }
+        catch(Exception e){
+            logInfo("Pop Up didn't arise");
+        }
+    }
+
 
     protected WebElement element(String elementToken) {
         return element(elementToken, "");
