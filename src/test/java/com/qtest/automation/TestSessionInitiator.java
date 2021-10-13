@@ -7,6 +7,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.qtest.automation.utils.BaseDriver;
 
 import com.qtest.easy.automation.actions.basic.*;
+import com.qtest.easy.automation.actions.intermediate.IntermediateActions;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
@@ -39,6 +40,9 @@ public class TestSessionInitiator extends BaseDriver {
     public BootstrapModalsActions bootstrapModalsActions;
 
 
+    public IntermediateActions intermediateActions;
+
+
     /**
      * Creating objects of Page Objects
      */
@@ -53,6 +57,9 @@ public class TestSessionInitiator extends BaseDriver {
         windowPopupModelActions = new WindowPopupModelActions(driver);
         bootstrapAlertsActions = new BootstrapAlertsActions(driver);
         bootstrapModalsActions = new BootstrapModalsActions(driver);
+
+
+        intermediateActions = new IntermediateActions(driver);
 
     }
 

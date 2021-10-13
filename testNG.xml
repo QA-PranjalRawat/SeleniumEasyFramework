@@ -48,4 +48,10 @@
     </test>
 
 
+
+    <test name="Intermediate">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.intermediate.Intermediate"/>
+        </classes>
+    </test>
 </suite>

@@ -12,20 +12,10 @@ public class BasicActions extends GetPage {
         super(driver,"basic/Basic");
     }
 
-    public void popUpHandler(){
-        logInfo("Activating pop up handler");
-        try {
-            element("popUp_btn").click();
-            logInfo("Pop Up Successfully Handled");
-        }
-        catch(Exception e){
-            logInfo("Pop Up didn't arise");
-        }
-    }
 
     public void clickOnBasic(){
         logInfo("Performing Click on Basic button action");
-        popUpHandler();
+        popUpHandler("popUp_btn");
 
         wait.waitForElementToBeClickable(element("basic_btn"));
         element("basic_btn").click();
