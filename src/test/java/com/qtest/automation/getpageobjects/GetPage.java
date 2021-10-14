@@ -88,6 +88,15 @@ public class GetPage extends BaseUi{
         return elem;
     }
 
+    protected List<WebElement> elements(String elementToken) {
+        return elements(elementToken, "");
+    }
+
+    protected List<WebElement> elements(String elementToken, String replacement) {
+        return wait.waitForElementsToBeVisible(driver.findElements(getLocator(
+                elementToken, replacement)));
+    }
+
     protected By getLocator(String elementToken, String replacement) {
         String[] locator = getELementFromFile(this.pageName, elementToken);
         locator[2] = locator[2].replaceAll("\\$\\{.+\\}", replacement);

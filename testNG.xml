@@ -64,4 +64,9 @@
             <class name="com.qtest.easy.automation.tests.intermediate.AjaxForm"/>
         </classes>
     </test>
+    <test name="Jquery Select Dropdown">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.intermediate.JquerySelectDropdown"/>
+        </classes>
+    </test>
 </suite>
