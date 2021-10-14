@@ -1,0 +1,22 @@
+Page: Jquery Select Dropdown
+
+jqueryDropdownBtn: linktext: JQuery Select dropdown
+
+
+countryDropdownBtn: css: select#country+span span[role="presentation"]
+countryDenmark: xpath: .//li[normalize-space(.)='Denmark']
+selectedValue: css: #select2-country-container
+
+multiSelectInput: css: input.select2-search__field
+multiSelectAlaska: xpath: .//li[normalize-space(.)='Alaska']
+multiSelectColorado: xpath: .//li[normalize-space(.)='Colorado']
+multiSelectHawaii: xpath: .//li[normalize-space(.)='Hawaii']
+selectedMultiValues: css: ul.select2-selection__rendered>li
+
+territoryDropdownBtn: css: select.js-example-disabled-results+span span[role="presentation"]
+territoryVirginIslands: xpath: .//li[normalize-space(.)='Virgin Islands']
+territoryGuam: xpath: .//li[normalize-space(.)='Guam']
+territorySelected: css: select.js-example-disabled-results+span span.select2-selection__rendered
+
+categoryDropdownBtn: css: select#files
+categoryLangRuby: xpath: .//option[normalize-space(.)='Ruby']
