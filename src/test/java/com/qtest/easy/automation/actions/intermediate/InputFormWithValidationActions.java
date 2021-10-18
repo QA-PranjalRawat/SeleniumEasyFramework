@@ -35,7 +35,7 @@ public class InputFormWithValidationActions extends GetPage {
         String lastName = "Smith";
         String email = "joesmith2021@testmail.com";
         String phoneNo = "9192939495";
-        String address = "myPlace";
+        String address = "myPlaces";
         String city = "hometown";
         String zipCode = "1234";
         String website = "mySite.test.com";
