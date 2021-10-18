@@ -1,0 +1,15 @@
+Page: Bootstrap List Box
+
+BootstrapListBtn: linktext: Bootstrap List Box
+
+leftListInput: css: div.list-left #listhead input
+leftListLi: css: div.list-left ul.list-group li
+leftListItems: css: div.list-left ul.list-group li[style='display: block;']
+
+moveLeftBtn: css: div.list-arrows .move-left
+
+rightListInput: css: div.list-right #listhead input
+rightListLi: css: div.list-right ul.list-group li
+rightListItems: css: div.list-right ul.list-group li[style='display: block;']
+
+moveRightBtn: css: div.list-arrows .move-right

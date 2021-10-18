@@ -69,4 +69,9 @@
             <class name="com.qtest.easy.automation.tests.intermediate.JquerySelectDropdown"/>
         </classes>
     </test>
+    <test name="Bootstrap List Box">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.intermediate.BootstrapListBox"/>
+        </classes>
+    </test>
 </suite>
