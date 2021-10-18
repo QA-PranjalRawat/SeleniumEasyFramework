@@ -44,6 +44,7 @@ public class TestSessionInitiator extends BaseDriver {
     public InputFormWithValidationActions inputFormWithValidationActions;
     public AjaxFormActions ajaxFormActions;
     public JquerySelectDropdownActions jquerySelectDropdownActions;
+    public BootstrapListBoxActions bootstrapListBoxActions;
 
     /**
      * Creating objects of Page Objects
@@ -65,6 +66,7 @@ public class TestSessionInitiator extends BaseDriver {
         inputFormWithValidationActions = new InputFormWithValidationActions(driver);
         ajaxFormActions = new AjaxFormActions(driver);
         jquerySelectDropdownActions = new JquerySelectDropdownActions(driver);
+        bootstrapListBoxActions = new BootstrapListBoxActions(driver);
 
     }
 

@@ -97,6 +97,15 @@ public class GetPage extends BaseUi{
                 elementToken, replacement)));
     }
 
+    protected boolean contains(String elementToken, String value){
+        List<String> listElements = new ArrayList<>();
+        int len = elements(elementToken).size();
+        for(int i=0;i<len;i++){
+            listElements.add((elements(elementToken).get(i).getText()).trim());
+        }
+        return listElements.contains(value);
+    }
+
     protected By getLocator(String elementToken, String replacement) {
         String[] locator = getELementFromFile(this.pageName, elementToken);
         locator[2] = locator[2].replaceAll("\\$\\{.+\\}", replacement);
