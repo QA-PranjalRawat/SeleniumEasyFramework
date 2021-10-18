@@ -74,4 +74,9 @@
             <class name="com.qtest.easy.automation.tests.intermediate.BootstrapListBox"/>
         </classes>
     </test>
+    <test name="Jquery List Box">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.intermediate.JqueryListBox"/>
+        </classes>
+    </test>
 </suite>

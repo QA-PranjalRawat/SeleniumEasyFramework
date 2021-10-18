@@ -1,0 +1,13 @@
+Page: Jquery List Box
+
+jqueryListBtn: linktext: JQuery List Box
+
+pickDataBox: css: div#pickList select.pickData
+
+addBtn: css: div.pickListButtons button.pAdd
+addAllBtn: css: div.pickListButtons button.pAddAll
+removeBtn: css: div.pickListButtons button.pRemove
+removeAllBtn: css: div.pickListButtons button.pRemoveAll
+
+
+resultDataBox: css: div#pickList select.pickListResult
