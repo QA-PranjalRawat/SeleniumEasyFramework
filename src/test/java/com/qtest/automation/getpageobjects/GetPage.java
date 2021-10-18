@@ -16,7 +16,7 @@ public class GetPage extends BaseUi{
     String pageName;
 
 
-    protected GetPage(WebDriver driver, String pageName) {
+    public GetPage(WebDriver driver, String pageName) {
         super(driver,pageName);
         this.driver = driver;
         this.pageName = pageName;
@@ -97,13 +97,22 @@ public class GetPage extends BaseUi{
                 elementToken, replacement)));
     }
 
-    protected boolean contains(String elementToken, String value){
+    protected boolean contains(String elementToken, Object value){
         List<String> listElements = new ArrayList<>();
         int len = elements(elementToken).size();
         for(int i=0;i<len;i++){
             listElements.add((elements(elementToken).get(i).getText()).trim());
         }
         return listElements.contains(value);
+    }
+
+    protected List<String> getElements(String elementToken){
+        List<String> listElements = new ArrayList<>();
+        int len = elements(elementToken).size();
+        for(int i=0;i<len;i++){
+            listElements.add((elements(elementToken).get(i).getText()).trim());
+        }
+        return listElements;
     }
 
     protected By getLocator(String elementToken, String replacement) {
