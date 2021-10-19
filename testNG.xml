@@ -84,4 +84,9 @@
             <class name="com.qtest.easy.automation.tests.intermediate.DataListFilter"/>
         </classes>
     </test>
+    <test name="Progress Bar Modal">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.intermediate.ProgressBarModel"/>
+        </classes>
+    </test>
 </suite>
