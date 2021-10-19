@@ -79,4 +79,9 @@
             <class name="com.qtest.easy.automation.tests.intermediate.JqueryListBox"/>
         </classes>
     </test>
+    <test name="Data List Filter">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.intermediate.DataListFilter"/>
+        </classes>
+    </test>
 </suite>
