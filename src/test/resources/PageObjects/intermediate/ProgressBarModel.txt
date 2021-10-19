@@ -1,0 +1,10 @@
+Page: Progress Bar Modal
+
+progressBarBtn: linktext: Progress Bar Modal
+
+simpleDialogBtn: css: button.btn-primary
+customMessageDialogBtn: css: button.btn-success
+customSettingDialogBtn: css: button.btn-warning
+
+
+progressModalHead: css: div.modal .modal-header>h3
