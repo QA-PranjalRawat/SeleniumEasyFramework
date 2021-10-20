@@ -1,0 +1,9 @@
+Page: Table Pagination
+
+
+tablePaginationBtn: linktext: Table Pagination
+
+tableRowNo: css: #myTable tr[style='display: table-row;'] td:first-child
+
+nextBtn: css: li>a.next_link
+prevBtn: css: li>a.prev_link
