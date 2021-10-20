@@ -94,4 +94,11 @@
             <class name="com.qtest.easy.automation.tests.intermediate.FileDownload"/>
         </classes>
     </test>
+
+
+    <test name="Advanced">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.advanced.Advanced"/>
+        </classes>
+    </test>
 </suite>
