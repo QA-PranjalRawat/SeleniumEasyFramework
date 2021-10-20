@@ -48,6 +48,7 @@ public class TestSessionInitiator extends BaseDriver {
     public JqueryListBoxActions jqueryListBoxActions;
     public DataListFilterActions dataListFilterActions;
     public ProgressBarModelActions progressBarModelActions;
+    public FileDownloadActions fileDownloadActions;
 
     /**
      * Creating objects of Page Objects
@@ -73,6 +74,7 @@ public class TestSessionInitiator extends BaseDriver {
         jqueryListBoxActions = new JqueryListBoxActions(driver);
         dataListFilterActions = new DataListFilterActions(driver);
         progressBarModelActions = new ProgressBarModelActions(driver);
+        fileDownloadActions = new FileDownloadActions(driver);
 
     }
 

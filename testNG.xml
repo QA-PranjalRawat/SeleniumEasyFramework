@@ -89,4 +89,9 @@
             <class name="com.qtest.easy.automation.tests.intermediate.ProgressBarModel"/>
         </classes>
     </test>
+    <test name="File Download">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.intermediate.FileDownload"/>
+        </classes>
+    </test>
 </suite>
