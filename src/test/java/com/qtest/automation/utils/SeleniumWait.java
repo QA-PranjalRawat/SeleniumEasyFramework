@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -56,6 +57,17 @@ public class SeleniumWait {
     
     public WebElement waitForElementToBeVisible(WebElement element) {
         return wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    public void waitForFileToDownload(String fileName){
+        File file = new File(fileName);
+        if (file.exists()){
+            file.delete();
+        }
+        while(!file.exists()){
+            hardWait(1);
+        }
+
     }
     
     public WebElement waitForElementToBePresent(By locator)

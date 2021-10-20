@@ -1,0 +1,8 @@
+Page: File Download
+
+fileDownloadBtn: linktext: File Download
+
+
+inputDataField: css: textarea#textbox
+generateFileBtn: css: button#create
+downloadBtn: css: a#link-to-download
