@@ -6,6 +6,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.qtest.automation.utils.BaseDriver;
 
+import com.qtest.easy.automation.actions.advanced.*;
 import com.qtest.easy.automation.actions.basic.*;
 import com.qtest.easy.automation.actions.intermediate.*;
 import org.testng.ITestResult;
@@ -50,6 +51,9 @@ public class TestSessionInitiator extends BaseDriver {
     public ProgressBarModelActions progressBarModelActions;
     public FileDownloadActions fileDownloadActions;
 
+
+    public AdvancedActions advancedActions;
+
     /**
      * Creating objects of Page Objects
      */
@@ -75,6 +79,9 @@ public class TestSessionInitiator extends BaseDriver {
         dataListFilterActions = new DataListFilterActions(driver);
         progressBarModelActions = new ProgressBarModelActions(driver);
         fileDownloadActions = new FileDownloadActions(driver);
+
+
+        advancedActions = new AdvancedActions(driver);
 
     }
 
