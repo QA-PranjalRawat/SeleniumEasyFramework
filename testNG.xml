@@ -101,4 +101,9 @@
             <class name="com.qtest.easy.automation.tests.advanced.Advanced"/>
         </classes>
     </test>
+    <test name="Table Pagination">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.advanced.TablePagination"/>
+        </classes>
+    </test>
 </suite>
