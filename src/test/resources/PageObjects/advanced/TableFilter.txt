@@ -1,0 +1,10 @@
+Page: Table Filter
+
+tableFilterBtn: linktext: Table Filter
+
+greenFilterBtn: css: div.btn-group .btn-success
+orangeFilterBtn: css: div.btn-group .btn-warning
+redFilterBtn: css: div.btn-group .btn-danger
+allFilterBtn: css: div.btn-group .btn-default
+
+nonFilteredElements: css: div.table-container tr td:last-child h4 span

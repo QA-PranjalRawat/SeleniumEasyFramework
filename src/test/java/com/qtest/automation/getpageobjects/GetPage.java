@@ -75,6 +75,7 @@ public class GetPage extends BaseUi{
     protected WebElement element(String elementToken) {
         return element(elementToken, "");
     }
+
     protected WebElement element(String elementToken, String replacement)
             throws NoSuchElementException {
         WebElement elem = null;
@@ -97,6 +98,11 @@ public class GetPage extends BaseUi{
                 elementToken, replacement)));
     }
 
+    protected List<WebElement> elementsHiddens(String elementToken, String replacement) {
+        return (driver.findElements(getLocator(
+                elementToken, replacement)));
+    }
+
     protected boolean contains(String elementToken, Object value){
         List<String> listElements = new ArrayList<>();
         int len = elements(elementToken).size();
@@ -110,7 +116,20 @@ public class GetPage extends BaseUi{
         List<String> listElements = new ArrayList<>();
         int len = elements(elementToken).size();
         for(int i=0;i<len;i++){
-            listElements.add((elements(elementToken).get(i).getText()).trim());
+            String ele = (elements(elementToken).get(i).getText()).trim();
+            listElements.add(ele);
+        }
+        return listElements;
+    }
+
+    protected List<String> getElementsHiddens(String elementToken){
+        List<String> listElements = new ArrayList<>();
+        int len = elementsHiddens(elementToken,"").size();
+        for(int i=0;i<len;i++){
+            String ele = (elementsHiddens(elementToken,"").get(i).getText()).trim();
+            if (!ele.isEmpty()){
+                listElements.add(ele);
+            }
         }
         return listElements;
     }
