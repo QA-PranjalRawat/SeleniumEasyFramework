@@ -106,4 +106,9 @@
             <class name="com.qtest.easy.automation.tests.advanced.TablePagination"/>
         </classes>
     </test>
+    <test name="Table Data Search">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.advanced.TableDataSearch"/>
+        </classes>
+    </test>
 </suite>

@@ -1,0 +1,15 @@
+Page: Table Data Search
+
+tableSearchBtn: linktext: Table Data Search
+
+
+inputFilterField: css: input#task-table-filter
+filteredRow: css: table#task-table tr[style='display: table-row;'] td
+
+filterActivateBtn: css: div.pull-right>button
+filterById: css: tr.filters th>input[placeholder='#']
+filterByUsername: css: tr.filters th>input[placeholder='Username']
+filterByFirstName: css: tr.filters th>input[placeholder='First Name']
+filterByLastName: css: tr.filters th>input[placeholder='Last Name']
+
+filteredColumn: css: div.filterable tr[style='display: table-row;'] td
