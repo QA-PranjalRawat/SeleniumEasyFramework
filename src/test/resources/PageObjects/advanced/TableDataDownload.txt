@@ -1,0 +1,13 @@
+Page: Table Data Download
+
+tableDataDownloadBtn: linktext: Table Data Download
+
+copyBtn: css: a.buttons-copy
+csvBtn: css: a.buttons-csv
+excelBtn: css: a.buttons-excel
+pdfBtn: css: a.buttons-pdf
+
+inputSearch: css: div#example_filter input
+filteredRows: css: table#example tbody tr
+
+copyPopUp: css: div#datatables_buttons_info div

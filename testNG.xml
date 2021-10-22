@@ -121,4 +121,9 @@
             <class name="com.qtest.easy.automation.tests.advanced.TableSortAndSearch"/>
         </classes>
     </test>
+    <test name="Table Data Download">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.advanced.TableDataDownload"/>
+        </classes>
+    </test>
 </suite>

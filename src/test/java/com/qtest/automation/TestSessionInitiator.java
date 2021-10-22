@@ -57,6 +57,7 @@ public class TestSessionInitiator extends BaseDriver {
     public TableDataSearchActions tableDataSearchActions;
     public TableFilterActions tableFilterActions;
     public TableSortAndSearchActions tableSortAndSearchActions;
+    public TableDataDownloadActions tableDataDownloadActions;
 
     /**
      * Creating objects of Page Objects
@@ -90,7 +91,7 @@ public class TestSessionInitiator extends BaseDriver {
         tableDataSearchActions = new TableDataSearchActions(driver);
         tableFilterActions = new TableFilterActions(driver);
         tableSortAndSearchActions = new TableSortAndSearchActions(driver);
-
+        tableDataDownloadActions = new TableDataDownloadActions(driver);
     }
 
 
