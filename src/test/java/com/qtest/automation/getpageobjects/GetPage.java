@@ -63,7 +63,7 @@ public class GetPage extends BaseUi{
     public void popUpHandler(String popUpBtn){
         logInfo("Activating pop up handler");
         try {
-            element(popUpBtn).click();
+            driver.findElement(getLocator(popUpBtn,"")).click();
             logInfo("Pop Up Successfully Handled");
         }
         catch(Exception e){
