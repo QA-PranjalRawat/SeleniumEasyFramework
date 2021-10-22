@@ -116,4 +116,9 @@
             <class name="com.qtest.easy.automation.tests.advanced.TableFilter"/>
         </classes>
     </test>
+    <test name="Table Sort And Search">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.advanced.TableSortAndSearch"/>
+        </classes>
+    </test>
 </suite>
