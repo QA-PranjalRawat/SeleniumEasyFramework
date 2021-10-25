@@ -59,6 +59,7 @@ public class TestSessionInitiator extends BaseDriver {
     public TableSortAndSearchActions tableSortAndSearchActions;
     public TableDataDownloadActions tableDataDownloadActions;
     public JqueryDownloadProgressBarActions jqueryDownloadProgressBarActions;
+    public BootstrapDownloadProgressBarActions bootstrapDownloadProgressBarActions;
 
     /**
      * Creating objects of Page Objects
@@ -94,6 +95,7 @@ public class TestSessionInitiator extends BaseDriver {
         tableSortAndSearchActions = new TableSortAndSearchActions(driver);
         tableDataDownloadActions = new TableDataDownloadActions(driver);
         jqueryDownloadProgressBarActions = new JqueryDownloadProgressBarActions(driver);
+        bootstrapDownloadProgressBarActions = new BootstrapDownloadProgressBarActions(driver);
     }
 
 

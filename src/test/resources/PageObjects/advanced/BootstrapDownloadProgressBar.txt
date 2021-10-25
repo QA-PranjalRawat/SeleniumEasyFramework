@@ -1,0 +1,6 @@
+Page: Bootstrap Download Progress bar
+
+bootstrapDownloadBtn: linktext: Bootstrap Download Progress bar
+
+downloadBtn: css: button#cricle-btn
+percentText: css: div.percenttext

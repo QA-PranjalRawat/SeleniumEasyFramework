@@ -131,4 +131,9 @@
             <class name="com.qtest.easy.automation.tests.advanced.JqueryDownloadProgressBar"/>
         </classes>
     </test>
+    <test name="Bootstrap Download Progress Bar">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.advanced.BootstrapDownloadProgressBar"/>
+        </classes>
+    </test>
 </suite>
