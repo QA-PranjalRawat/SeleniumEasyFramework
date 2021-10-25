@@ -160,14 +160,14 @@ public class SeleniumWait {
         int i = 0;
         resetImplicitTimeout(1);
         try {
-            while (!((element.getText()).equals(ExpectedText)) && i <= timeout) {
+            while (!((element.getText()).equals(ExpectedText)) && i <= timeout+50) {
                 hardWait(1);                
                 i++;
 //               System.out.println(i + " Seconds");
             }
          
         } catch (Exception e) {
-        	System.out.println();
+//        	System.out.println();
         }
         resetImplicitTimeout(timeout);        
     }
