@@ -126,4 +126,9 @@
             <class name="com.qtest.easy.automation.tests.advanced.TableDataDownload"/>
         </classes>
     </test>
+    <test name="Jquery Download Progress Bar">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.advanced.JqueryDownloadProgressBar"/>
+        </classes>
+    </test>
 </suite>
