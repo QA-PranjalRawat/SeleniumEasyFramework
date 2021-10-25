@@ -1,0 +1,7 @@
+Page: JQuery Download Progress bars
+
+jqueryProgressBtn: linktext: JQuery Download Progress bars
+downloadBtn: css: button#downloadButton
+dialog: css: div[role='dialog']
+statusMessage: css: #dialog div.progress-label
+closeBtn: css: div[role='dialog'] .ui-dialog-buttonset button
