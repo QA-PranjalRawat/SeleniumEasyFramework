@@ -34,6 +34,7 @@ public class JqueryDownloadProgressBarActions extends GetPage {
         logInfo("Starting Downloading Progress Bar");
         wait.waitForElementToAppear(element("dialog"));
         wait.waitForExactValueOfElement(element("statusMessage"),"Complete!");
+        Assert.assertTrue(element("statusMessage").getText().contains("Complete!"));
         logInfo("Download Progress Successfully Completed");
 
         wait.waitForExactValueOfElement(element("closeBtn"),"Close");
