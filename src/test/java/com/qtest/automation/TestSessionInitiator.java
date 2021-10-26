@@ -61,6 +61,7 @@ public class TestSessionInitiator extends BaseDriver {
     public JqueryDownloadProgressBarActions jqueryDownloadProgressBarActions;
     public BootstrapDownloadProgressBarActions bootstrapDownloadProgressBarActions;
     public DragAndDropSliderActions dragAndDropSliderActions;
+    public DragAndDropActions dragAndDropActions;
 
     /**
      * Creating objects of Page Objects
@@ -98,6 +99,7 @@ public class TestSessionInitiator extends BaseDriver {
         jqueryDownloadProgressBarActions = new JqueryDownloadProgressBarActions(driver);
         bootstrapDownloadProgressBarActions = new BootstrapDownloadProgressBarActions(driver);
         dragAndDropSliderActions = new DragAndDropSliderActions(driver);
+        dragAndDropActions = new DragAndDropActions(driver);
     }
 
 
