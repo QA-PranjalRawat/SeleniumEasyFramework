@@ -1,0 +1,17 @@
+Page: Drag & Drop Sliders
+
+dragDropBtn: linktext: Drag & Drop Sliders
+
+firstSlider: css: div#slider1 input
+secondSlider: css: div#slider2 input
+thirdSlider: css: div#slider3 input
+fourthSlider: css: div#slider4 input
+fifthSlider: css: div#slider5 input
+sixthSlider: css: div#slider6 input
+
+firstSliderOutput: css: div#slider1 output
+secondSliderOutput: css: div#slider2 output
+thirdSliderOutput: css: div#slider3 output
+fourthSliderOutput: css: div#slider4 output
+fifthSliderOutput: css: div#slider5 output
+sixthSliderOutput: css: div#slider6 output

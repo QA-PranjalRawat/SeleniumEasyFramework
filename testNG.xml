@@ -136,4 +136,9 @@
             <class name="com.qtest.easy.automation.tests.advanced.BootstrapDownloadProgressBar"/>
         </classes>
     </test>
+    <test name="Drag And Drop Slider">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.advanced.DragAndDropSlider"/>
+        </classes>
+    </test>
 </suite>
