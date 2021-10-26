@@ -1,0 +1,8 @@
+Page: Drag and Drop
+
+dragDropBtn: linktext: Drag and Drop
+
+dropZone: css: div#mydropzone
+droppedList: css: div#droppedlist
+
+item1: css: div#todrag span:nth-of-type(1)

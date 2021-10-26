@@ -141,4 +141,9 @@
             <class name="com.qtest.easy.automation.tests.advanced.DragAndDropSlider"/>
         </classes>
     </test>
+    <test name="Drag And Drop">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.advanced.DragAndDrop"/>
+        </classes>
+    </test>
 </suite>
