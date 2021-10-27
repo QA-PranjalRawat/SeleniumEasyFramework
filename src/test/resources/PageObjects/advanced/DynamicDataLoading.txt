@@ -1,0 +1,6 @@
+Page: Dynamic Data Loading
+
+dynamicDataBtn: linktext: Dynamic Data Loading
+
+getNewUser: css: button#save
+loading: css: div#loading
