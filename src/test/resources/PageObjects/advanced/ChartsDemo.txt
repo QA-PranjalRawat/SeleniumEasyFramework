@@ -1,0 +1,8 @@
+Page: Charts Demo
+
+chartDemoBtn: linktext: Charts Demo
+
+stockName: css: div#line-chart-widget strong
+
+shareTraded: css: div#line-chart-widget div.panel-footer li:nth-of-type(1) h3
+marketCap: css: div#line-chart-widget div.panel-footer li:nth-of-type(2) h3
