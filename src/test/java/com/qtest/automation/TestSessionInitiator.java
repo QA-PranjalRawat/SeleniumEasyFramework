@@ -62,6 +62,7 @@ public class TestSessionInitiator extends BaseDriver {
     public BootstrapDownloadProgressBarActions bootstrapDownloadProgressBarActions;
     public DragAndDropSliderActions dragAndDropSliderActions;
     public DragAndDropActions dragAndDropActions;
+    public DynamicDataLoadingActions dynamicDataLoadingActions;
 
     /**
      * Creating objects of Page Objects
@@ -100,6 +101,7 @@ public class TestSessionInitiator extends BaseDriver {
         bootstrapDownloadProgressBarActions = new BootstrapDownloadProgressBarActions(driver);
         dragAndDropSliderActions = new DragAndDropSliderActions(driver);
         dragAndDropActions = new DragAndDropActions(driver);
+        dynamicDataLoadingActions = new DynamicDataLoadingActions(driver);
     }
 
 

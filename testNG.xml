@@ -146,4 +146,9 @@
             <class name="com.qtest.easy.automation.tests.advanced.DragAndDrop"/>
         </classes>
     </test>
+    <test name="Dynamic Data Loading">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.advanced.DynamicDataLoading"/>
+        </classes>
+    </test>
 </suite>
