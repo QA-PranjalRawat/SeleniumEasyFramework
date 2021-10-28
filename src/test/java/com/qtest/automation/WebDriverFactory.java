@@ -11,6 +11,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
@@ -41,7 +42,7 @@ public class WebDriverFactory {
         System.out.println("browser="+ browser);
         System.out.println("headless="+ headless);
 
-        prefs.put("download.default_directory",System.getProperty("user.dir") + File.separator + "downloads");
+
 
         // Calling suitable browser method
         if (browser.equalsIgnoreCase("chrome")) {
@@ -72,8 +73,9 @@ public class WebDriverFactory {
             options.addArguments("--headless");
         }
 
-
-        
+        // Setting download folder loaction
+        prefs.put("download.default_directory",System.getProperty("user.dir") + File.separator + "downloads");
+        options.setExperimentalOption("prefs", prefs);
 
 
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
@@ -100,6 +102,11 @@ public class WebDriverFactory {
         if(headless.equalsIgnoreCase("True")){
             options.setHeadless(true);
         }
+
+        FirefoxProfile profile = new FirefoxProfile();
+        // Setting custom download directory
+        profile.setPreference("browser.download.dir",System.getProperty("user.dir") + File.separator + "downloads");
+        options.setProfile(profile);
 
         capabilities.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options);
         capabilities.setJavascriptEnabled(true);
