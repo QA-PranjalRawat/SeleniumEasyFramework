@@ -15,13 +15,14 @@ public class BaseDriver {
     protected WebDriverFactory wdfactory;
 
     protected void _configureBrowser() {
+
         driver = wdfactory.getDriver(_getSessionConfig());
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Integer.parseInt(_getSessionConfig().get("timeout")),
                 TimeUnit.SECONDS);
     }
     private Map<String, String> _getSessionConfig() {
-        String[] configKeys = {"browser","timeout", "driverpath", "take-screenshot", "screenshot-path" };
+        String[] configKeys = {"browser", "headless","timeout", "driverpath", "take-screenshot", "screenshot-path" };
         Map<String, String> config = new HashMap<String, String>();
         for (String string : configKeys) {
             config.put(string, getProperty("./Config.properties", string));
