@@ -47,7 +47,7 @@ public class FileDownloadActions extends GetPage {
         element("downloadBtn").click();
 
 
-        String fileUrl = "C:\\Users\\pranjal.rawat\\Downloads\\easyinfo.txt";
+        String fileUrl = System.getProperty("user.dir")+ File.separator + "downloads" + File.separator +"easyinfo.txt";
         wait.waitForFileToDownload(fileUrl);
 
         File easyInfo = new File(fileUrl);
