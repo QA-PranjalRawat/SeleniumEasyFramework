@@ -6,6 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
@@ -33,6 +34,9 @@ public class WebDriverFactory {
         else if (browser.equalsIgnoreCase("edge")){
             return getEdgeDriver(seleniumconfig.get("driverpath").toString());
         }
+        else if (browser.equalsIgnoreCase("firefox")){
+            return getFirefoxDriver(seleniumconfig.get("driverpath").toString());
+        }
         return new ChromeDriver();
     }
 
@@ -50,6 +54,16 @@ public class WebDriverFactory {
         String edgeDriverPath = driverpath+ "msedgedriver.exe";
         System.setProperty("webdriver.edge.driver", edgeDriverPath);
         return new EdgeDriver();
+    }
+
+    private static WebDriver getFirefoxDriver(String driverpath) {
+        String firefoxDriverPath = driverpath+ "geckodriver";
+        if (StringUtils.containsIgnoreCase(System.getProperty("os.name"), "window")) {
+            firefoxDriverPath = firefoxDriverPath + ".exe";
+        }
+        System.setProperty("webdriver.gecko.driver", firefoxDriverPath);
+        capabilities.setJavascriptEnabled(true);
+        return new FirefoxDriver(capabilities);
     }
 
 }
