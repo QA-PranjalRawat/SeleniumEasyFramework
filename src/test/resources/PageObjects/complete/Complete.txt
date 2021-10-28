@@ -1,0 +1,5 @@
+Page: Complete
+
+completeBtn: css: a#done_example
+popUp_btn: css: a.at-cm-no-button
+active_text: css: div.in.active>h3
