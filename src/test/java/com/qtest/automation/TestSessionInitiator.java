@@ -108,6 +108,7 @@ public class TestSessionInitiator extends BaseDriver {
         dynamicDataLoadingActions = new DynamicDataLoadingActions(driver);
         chartsDemoActions = new ChartsDemoActions(driver);
 
+
         completeActions = new CompleteActions(driver);
     }
 
@@ -204,10 +205,10 @@ public class TestSessionInitiator extends BaseDriver {
         driver.get(appurl);
     }
 
-    public void changeWindow(int i) {
-        Set<String> windows = driver.getWindowHandles();
-        String wins[] = windows.toArray(new String[windows.size()]);
-        driver.switchTo().window(wins[i]);
-    }
+//    public void changeWindow(int i) {
+//        Set<String> windows = driver.getWindowHandles();
+//        String wins[] = windows.toArray(new String[windows.size()]);
+//        driver.switchTo().window(wins[i]);
+//    }
 
 }

@@ -28,28 +28,28 @@ public class SeleniumWait {
     /**
      * Returns webElement found by the locator if element is visible
      *
-     * @param locator
+     * @param
      * @return
      */
-    public WebElement getWhenVisible(By locator) {
-        WebElement element;
-        element = wait.until(ExpectedConditions
-                .visibilityOfElementLocated(locator));
-        return element;
-    }
+//    public WebElement getWhenVisible(By locator) {
+//        WebElement element;
+//        element = wait.until(ExpectedConditions
+//                .visibilityOfElementLocated(locator));
+//        return element;
+//    }
     public void waitForAlertToPresent(){
         wait.until(ExpectedConditions.alertIsPresent());
     }
     
-    public WebElement getWhenClickable(By locator) {
-        WebElement element;
-        element = wait.until(ExpectedConditions.elementToBeClickable(locator));
-        return element;
-    }
-    
-    public boolean waitForPageTitleToBeExact(String expectedPagetitle) {
-        return wait.until(ExpectedConditions.titleIs(expectedPagetitle));
-    }
+//    public WebElement getWhenClickable(By locator) {
+//        WebElement element;
+//        element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+//        return element;
+//    }
+//
+//    public boolean waitForPageTitleToBeExact(String expectedPagetitle) {
+//        return wait.until(ExpectedConditions.titleIs(expectedPagetitle));
+//    }
     
     public boolean waitForPageTitleToContain(String expectedPagetitle) {
         return wait.until(ExpectedConditions.titleContains(expectedPagetitle));
@@ -70,69 +70,69 @@ public class SeleniumWait {
 
     }
     
-    public WebElement waitForElementToBePresent(By locator)
-    {
-    	return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-    	
-    }
-    public List<WebElement> waitForElementsToBePresent(By locator)
-    {
-    	return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
-    }
-    
-    public void waitForFrameToBeAvailableAndSwitchToIt(By locator) {
-        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(locator));
-    }
-    
+//    public WebElement waitForElementToBePresent(By locator)
+//    {
+//    	return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+//
+//    }
+//    public List<WebElement> waitForElementsToBePresent(By locator)
+//    {
+//    	return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
+//    }
+//
+//    public void waitForFrameToBeAvailableAndSwitchToIt(By locator) {
+//        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(locator));
+//    }
+//
     public List<WebElement> waitForElementsToBeVisible(List<WebElement> elements) {
         return wait.until(ExpectedConditions.visibilityOfAllElements(elements));
     }
-    
-    public boolean waitForElementToBeInVisible(By locator) {
-        return wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
-    }
-    
+//
+//    public boolean waitForElementToBeInVisible(By locator) {
+//        return wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+//    }
+//
     public WebElement waitForElementToBeClickable(WebElement element) {
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
     
-    public void clickWhenReady(By locator) {
-        WebElement element = wait.until(ExpectedConditions
-                .elementToBeClickable(locator));
-        element.click();
-    }
+//    public void clickWhenReady(By locator) {
+//        WebElement element = wait.until(ExpectedConditions
+//                .elementToBeClickable(locator));
+//        element.click();
+//    }
 
 
-    public void waitForMsgToastToDisappear() {
-        int i = 0;
-        resetImplicitTimeout(1);
-        try {
-            while (driver.findElement(By.className("toast-message")).isDisplayed() && i <= timeout) {
-                hardWait(1);                
-                i++;
-                System.out.println("i==="+ i);
-            }
-        } catch (Exception e) {
-        }
-        resetImplicitTimeout(timeout);        
-    }
-    
-    public void waitForElementToDisappear(WebElement element) {
-        int i = 0;
-        System.out.println("waitForElementToDisappear");
-        System.out.println("element.isDisplayed()"+ element.isDisplayed());
-        resetImplicitTimeout(2);
-        try {
-            while (element.isDisplayed() && i <= timeout) {
-                hardWait(1);                
-                i++;
-                System.out.println(i + " Seconds");  
-            }
-        } catch (Exception e) {
-        	System.out.println("exception thrown");
-        }
-        resetImplicitTimeout(timeout);        
-    }
+//    public void waitForMsgToastToDisappear() {
+//        int i = 0;
+//        resetImplicitTimeout(1);
+//        try {
+//            while (driver.findElement(By.className("toast-message")).isDisplayed() && i <= timeout) {
+//                hardWait(1);
+//                i++;
+//                System.out.println("i==="+ i);
+//            }
+//        } catch (Exception e) {
+//        }
+//        resetImplicitTimeout(timeout);
+//    }
+//
+//    public void waitForElementToDisappear(WebElement element) {
+//        int i = 0;
+//        System.out.println("waitForElementToDisappear");
+//        System.out.println("element.isDisplayed()"+ element.isDisplayed());
+//        resetImplicitTimeout(2);
+//        try {
+//            while (element.isDisplayed() && i <= timeout) {
+//                hardWait(1);
+//                i++;
+//                System.out.println(i + " Seconds");
+//            }
+//        } catch (Exception e) {
+//        	System.out.println("exception thrown");
+//        }
+//        resetImplicitTimeout(timeout);
+//    }
     
     public void waitForElementToAppear(WebElement element) {
         int i = 0;
@@ -211,24 +211,24 @@ public class SeleniumWait {
     @FindBy(id = "loadingBlock")
     WebElement loader;
     
-    public void waitForLoaderToDisappear() {
-        int i = 0;
-        resetImplicitTimeout(5);
-        try {
-            while (loader.isDisplayed() && i <= timeout) {
-                hardWait(1);                
-                i++;
-            }
-        } catch (Exception e) {	
-        }
-        resetImplicitTimeout(timeout);        
-    }
-    
-    public void resetExplicitTimeout(int newTimeOut) {
-		  try {
-		   this.wait = new WebDriverWait(driver, newTimeOut);
-		  } catch (Exception e) {
-		  }
-		 }
+//    public void waitForLoaderToDisappear() {
+//        int i = 0;
+//        resetImplicitTimeout(5);
+//        try {
+//            while (loader.isDisplayed() && i <= timeout) {
+//                hardWait(1);
+//                i++;
+//            }
+//        } catch (Exception e) {
+//        }
+//        resetImplicitTimeout(timeout);
+//    }
+//
+//    public void resetExplicitTimeout(int newTimeOut) {
+//		  try {
+//		   this.wait = new WebDriverWait(driver, newTimeOut);
+//		  } catch (Exception e) {
+//		  }
+//		 }
     
 }
