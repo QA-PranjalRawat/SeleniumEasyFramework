@@ -8,6 +8,7 @@ import com.qtest.automation.utils.BaseDriver;
 
 import com.qtest.easy.automation.actions.advanced.*;
 import com.qtest.easy.automation.actions.basic.*;
+import com.qtest.easy.automation.actions.complete.CompleteActions;
 import com.qtest.easy.automation.actions.intermediate.*;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -63,7 +64,10 @@ public class TestSessionInitiator extends BaseDriver {
     public DragAndDropSliderActions dragAndDropSliderActions;
     public DragAndDropActions dragAndDropActions;
     public DynamicDataLoadingActions dynamicDataLoadingActions;
+    public ChartsDemoActions chartsDemoActions;
 
+
+    public CompleteActions completeActions;
     /**
      * Creating objects of Page Objects
      */
@@ -102,6 +106,9 @@ public class TestSessionInitiator extends BaseDriver {
         dragAndDropSliderActions = new DragAndDropSliderActions(driver);
         dragAndDropActions = new DragAndDropActions(driver);
         dynamicDataLoadingActions = new DynamicDataLoadingActions(driver);
+        chartsDemoActions = new ChartsDemoActions(driver);
+
+        completeActions = new CompleteActions(driver);
     }
 
 

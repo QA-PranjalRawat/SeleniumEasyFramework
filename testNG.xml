@@ -151,4 +151,15 @@
             <class name="com.qtest.easy.automation.tests.advanced.DynamicDataLoading"/>
         </classes>
     </test>
+    <test name="Charts Demo">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.advanced.ChartsDemo"/>
+        </classes>
+    </test>
+
+    <test name="Complete">
+        <classes>
+            <class name="com.qtest.easy.automation.tests.complete.Complete"/>
+        </classes>
+    </test>
 </suite>
