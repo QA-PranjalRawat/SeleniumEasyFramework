@@ -7,6 +7,8 @@ import org.testng.Assert;
 import java.io.File;
 
 public class TableDataDownloadActions extends GetPage {
+    String filename = System.getProperty("user.dir")+ File.separator + "downloads"+ File.separator + "Selenium Easy - Download Table Data to CSV, Excel, PDF and Print";
+
     public TableDataDownloadActions(WebDriver driver) {
         super(driver, "advanced/TableDataDownload");
     }
@@ -54,7 +56,6 @@ public class TableDataDownloadActions extends GetPage {
     }
 
     public void tableDataToCsv(){
-        String filename = "C:\\Users\\pranjal.rawat\\Downloads\\Selenium Easy - Download Table Data to CSV, Excel, PDF and Print";
 
         logInfo("Verifying the working of table csv Download");
         wait.waitForElementToBeClickable(element("csvBtn")).click();
@@ -66,7 +67,6 @@ public class TableDataDownloadActions extends GetPage {
     }
 
     public void tableDataToXlsx(){
-        String filename = "C:\\Users\\pranjal.rawat\\Downloads\\Selenium Easy - Download Table Data to CSV, Excel, PDF and Print";
 
         logInfo("Verifying the working of table Xlsx Download");
         wait.waitForElementToBeClickable(element("excelBtn")).click();
@@ -78,7 +78,6 @@ public class TableDataDownloadActions extends GetPage {
     }
 
     public void tableDataToPdf(){
-        String filename = "C:\\Users\\pranjal.rawat\\Downloads\\Selenium Easy - Download Table Data to CSV, Excel, PDF and Print";
 
         logInfo("Verifying the working of table Pdf Download");
         wait.waitForElementToBeClickable(element("pdfBtn")).click();
